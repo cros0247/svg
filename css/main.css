@@ -1,0 +1,22 @@
+:root {
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.svg1 {
+    background-color: aquamarine;
+}
+
+.svg1:hover {
+    fill: red;
+}
+
+.dots {
+    transition: all 2s;
+}
+
+.dots:hover circle {
+    transform: translateX(20px);
+}
+
+

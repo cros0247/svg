@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Creating SVGs</h2>
+    <svg class="svg1" width="300" height="400" viewBox="0 0 300 400"> 
+        <rect width="300" height="50%" x="0" y="0" fill="pink" rx="10" />
+    </svg>
+
+    <svg class="svg1" width="300" height="300" viewBox="0 0 300 300"> 
+        <circle cx="150" cy="150" fill="blue" r="50" />
+    </svg>
+
+    <img src="images/ellipse.svg" alt="ellipse">
+
+    <svg class="" width="300" height="300" viewBox="0 0 300 300"> 
+        <line x1="0" y1="0" x2="300" y2="300" stroke="goldenrod" stroke-width="35" />
+    </svg>
+
+    <svg class="svg1" width="100" height="100" viewBox="0 0 100 100"> 
+        <polyline points="0,20 20,20 30,0 40,20 60,20 40,35 60,60 30,45 0,60 20,35 0,20"  fill="black"  stroke="goldenrod" stroke-width="3"/>
+    </svg>
+
+    <svg class="svg1" width="100" height="100" viewBox="0 0 100 100"> 
+        <polygon points="0,20 20,20 30,0 40,20 60,20 40,35 60,60 30,45 0,60 20,35 0,20"  fill="black"  stroke="goldenrod" stroke-width="3"/>
+    </svg>
+
+
+
+    <svg width="300" height="300" viewBox="0 0 300 300">
+        <rect width="200" height="200" x="0" y="0" fill="blue" rx="10"/>
+        <g class="dots">
+            <circle cx="50" cy="50" r="30" fill="lime"/>
+            <circle cx="150" cy="50" r="30" fill="lime"/>
+            <circle cx="50" cy="150" r="30" fill="lime"/>
+            <circle cx="150" cy="150" r="30" fill="lime"/>
+        </g>
+    </svg>
+
+    <svg width="120" height="240" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="Gradient1">
+            <stop class="stop1" offset="0%" />
+            <stop class="stop2" offset="50%" />
+            <stop class="stop3" offset="100%" />
+          </linearGradient>
+          <linearGradient id="Gradient2" x1="0" x2="0.5" y1="0" y2="1">
+            <stop offset="0%" stop-color="red" />
+            <stop offset="50%" stop-color="black" stop-opacity="0" />
+            <stop offset="100%" stop-color="blue" />
+          </linearGradient>
+        </defs>
+        <style>
+            #rect1 {
+              fill: url(#Gradient1);
+            }
+            .stop1 {
+              stop-color: red;
+            }
+            .stop2 {
+              stop-color: black;
+              stop-opacity: 0;
+            }
+            .stop3 {
+              stop-color: blue;
+            }
+          </style>
+        
+          <rect id="rect1" x="10" y="10" rx="15" ry="15" width="100" height="100" />
+          <rect
+            x="10"
+            y="120"
+            rx="15"
+            ry="15"
+            width="100"
+            height="100"
+            fill="url(#Gradient2)" />
+    </svg>
+
+
+</body>
+</html>
